@@ -1,5 +1,5 @@
 
-FROM alpine
+FROM debian:bullseye
 RUN apt-get update
 
 ENV DISPLAY=:1 \
