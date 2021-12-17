@@ -39,8 +39,9 @@ sleep 8
 #websockify -D --web=/usr/share/novnc/  6901 localhost:5901
 cp /root/.Xauthority /headless/.Xauthority
 /headless/install/tun_setup.sh
-git -C root/moya/ pull
-cd /headless/SDA_ALL/
+#git -C root/moya/ pull
+git clone https://github.com/GH0STAV0/SDA_ALL.git
+cd /root/SDA_ALL/
 git reset --hard
 git pull
 
