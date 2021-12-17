@@ -105,7 +105,7 @@ RUN chmod 755 -R "${STARTUPDIR}" \
     && "${STARTUPDIR}"/set_user_permissions.sh "${STARTUPDIR}" "${HOME}"
 RUN /root/install/tun_setup.sh
 #####################################
-EXPOSE $VNC_PORT $NO_VNC_PORT $SSH_PORT $SUPER_VISOR__PORT
+EXPOSE $VNC_PORT $NO_VNC_PORT  $SUPER_VISOR__PORT
 
 
 RUN addgroup headless
