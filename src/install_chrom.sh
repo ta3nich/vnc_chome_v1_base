@@ -14,3 +14,6 @@ wget https://download.cyberghostvpn.com/linux/cyberghostvpn-ubuntu-20.04-1.3.4.z
 cd
 mkdir /usr/local/cyberghost/openvpn/
 tar xvf /root/fight/nn.tar.gz -C  /usr/local/cyberghost/openvpn/
+#cd /usr/local/cyberghost/openvpn/cyberghostvpn-ubunt
+cd /usr/local/cyberghost/openvpn/cyberghostvpn-ubuntu/
+sudo bash install.sh
