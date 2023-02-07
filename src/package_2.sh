@@ -50,10 +50,10 @@ git clone https://github.com/y0shimitsugh0st84/moya.git
 # wget https://ftp.mozilla.org/pub/firefox/releases/58.0.1/linux-x86_64/en-GB/firefox-58.0.1.tar.bz2 ## && tar -xf firefox-58.0.1.tar.bz2 -C /root/EXTRAT/firefox-58.0.1/
 # wget https://ftp.mozilla.org/pub/firefox/releases/59.0.1/linux-x86_64/en-GB/firefox-59.0.1.tar.bz2 # && tar -xf firefox-59.0.1.tar.bz2 -C /root/EXTRAT/firefox-59.0.1/
 
-clear 
+#clear 
 echo "Install Package OPENVPN TUN/TAP"
 
-clear
+#clear
 echo "clean "
 
 apt-get clean autoclean
