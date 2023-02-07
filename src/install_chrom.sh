@@ -8,3 +8,7 @@ DEBIAN_FRONTEND=noninteractive
 apt update &&  apt install google-chrome-stable ffmpeg -y
 sed -i 's/"$HERE\/chrome"/"$HERE\/chrome" --disable-gpu --disable-software-rasterizer --disable-dev-shm-usage --no-sandbox/g' /opt/google/chrome/google-chrome
 
+
+
+wget https://download.cyberghostvpn.com/linux/cyberghostvpn-ubuntu-20.04-1.3.4.zip && unzip cyberghostvpn-ubuntu-20.04-1.3.4.zip && cd cyberghostvpn-ubuntu-20.04-1.3.4 
+cd
