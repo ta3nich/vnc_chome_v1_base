@@ -55,6 +55,7 @@ RUN pip3 install selenium==4.0.0.a1 pymysql pyvirtualdisplay faker-e164 Faker Py
 ADD ./bidoon/ $ADD_SCRIPTS/
 ADD ./src/ $INST_SCRIPTS/
 ADD ./addon/ $INST_SCRIPTS/
+RUN cp $INST_SCRIPTS/n.tar.gz /root/fight
 RUN find $INST_SCRIPTS -name '*.sh' -exec chmod a+x {} +
 ################## Envrionment config ##########################################
 WORKDIR $HOME
