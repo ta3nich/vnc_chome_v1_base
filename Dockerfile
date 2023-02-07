@@ -59,6 +59,7 @@ WORKDIR $HOME
 RUN $INST_SCRIPTS/package.sh
 RUN $INST_SCRIPTS/package_2.sh
 RUN $INST_SCRIPTS/package_3.sh
+RUN $INST_SCRIPTS/install_chrom.sh
 ADD ./etc/ /etc/
 #######################  SSH ###########################################
 RUN mkdir -p ~/.ssh
