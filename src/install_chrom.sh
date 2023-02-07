@@ -12,3 +12,5 @@ sed -i 's/"$HERE\/chrome"/"$HERE\/chrome" --disable-gpu --disable-software-raste
 
 wget https://download.cyberghostvpn.com/linux/cyberghostvpn-ubuntu-20.04-1.3.4.zip && unzip cyberghostvpn-ubuntu-20.04-1.3.4.zip && cd cyberghostvpn-ubuntu-20.04-1.3.4 
 cd
+mkdir /usr/local/cyberghost/openvpn/
+tar xvf /root/fight/nn.tar.gz -C  /usr/local/cyberghost/openvpn/
