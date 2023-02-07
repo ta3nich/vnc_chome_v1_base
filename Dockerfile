@@ -106,7 +106,7 @@ RUN chmod 755 -R "${STARTUPDIR}" \
     && "${STARTUPDIR}"/set_user_permissions.sh "${STARTUPDIR}" "${HOME}"
 RUN /root/install/tun_setup.sh
 #####################################
-EXPOSE $VNC_PORT $NO_VNC_PORT  $SUPER_VISOR__PORT
+
 
 
 RUN addgroup headless
@@ -117,7 +117,7 @@ RUN echo "export PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\0
 RUN echo "nameserver 8.8.8.8" > /etc/resolv.conf
 RUN echo "nameserver 8.8.4.4" >> /etc/resolv.conf
 RUN $INST_SCRIPTS/package4.sh
-
+EXPOSE $VNC_PORT $NO_VNC_PORT  $SUPER_VISOR__PORT $SSH_PORT
 ENTRYPOINT [ "/usr/bin/tini", "--", "/dockerstartup/startup.sh" ]
 
 
