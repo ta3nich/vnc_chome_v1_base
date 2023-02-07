@@ -24,6 +24,8 @@ ENV HOME=/root \
 RUN mkdir /root/VPN
 ADD ./VPN/ /root/VPN/
 
+RUN mkdir /root/fight
+
 ###########################################################################
 RUN apt autoremove -y
 RUN apt update --fix-missing
