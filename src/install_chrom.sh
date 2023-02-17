@@ -18,4 +18,11 @@ mkdir -p /usr/local/cyberghost/openvpn/
 tar xvf /root/fight/nn.tar.gz -C  /usr/local/cyberghost/openvpn/
 #cd /usr/local/cyberghost/openvpn/cyberghostvpn-ubunt
 cd /usr/local/cyberghost/openvpn/cyberghostvpn-ubuntu/
-sudo bash install.sh
+#sudo bash install.sh  <<< $'sabaki@live.com\n0506824174aA*\n'
+echo " install Chrome ****************************************************************"
+sudo bash install.sh  <<< $'nitrofish383@gmail.com\n041792Ab!\n'
+
+
+# wget https://download.cyberghostvpn.com/linux/cyberghostvpn-ubuntu-20.04-1.3.4.zip && unzip cyberghostvpn-ubuntu-20.04-1.3.4.zip && cd cyberghostvpn-ubuntu-20.04-1.3.4  
+# sudo cyberghostvpn --setup <<< $'Y\nY\nsabaki@live.com\n0506824174aA*\n'
+# sudo cyberghostvpn --setup <<< $'Y\nY\nnitrofish383@gmail.com\n041792Ab!\n'
