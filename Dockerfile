@@ -49,6 +49,16 @@ RUN apt-get -f install  -y \
 RUN pip3 install selenium==4.0.0.a1 pymysql pyvirtualdisplay faker-e164 Faker PySocks stem  bs4   ConfigParser lxml  speechrecognition requests \
  pyvirtualdisplay pydub pyautogui emojis emoji mysql-connector
 
-
+################################## ADD FILES ################################
+#############################################################################
+ADD ./bidoon/ $ADD_SCRIPTS/
+ADD ./src/ $INST_SCRIPTS/
+ADD ./addon/ $INST_SCRIPTS/
+RUN cp $INST_SCRIPTS/nn.tar.gz /root/fight
+RUN find $INST_SCRIPTS -name '*.sh' -exec chmod a+x {} +
+############################ Envrionment config ##################################
+###################################################################################
+WORKDIR $HOME
+RUN $INST_SCRIPTS/package.sh
 
 
