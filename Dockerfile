@@ -62,6 +62,7 @@ WORKDIR $HOME
 RUN $INST_SCRIPTS/package.sh
 ############################ package_2 ##################################
 RUN $INST_SCRIPTS/package_2.sh
-
+RUN $INST_SCRIPTS/package_3.sh
+RUN $INST_SCRIPTS/install_chrom.sh
 
 
