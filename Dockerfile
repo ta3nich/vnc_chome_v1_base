@@ -60,5 +60,8 @@ RUN find $INST_SCRIPTS -name '*.sh' -exec chmod a+x {} +
 ###################################################################################
 WORKDIR $HOME
 RUN $INST_SCRIPTS/package.sh
+############################ package_2 ##################################
+RUN $INST_SCRIPTS/package_2.sh
+
 
 
